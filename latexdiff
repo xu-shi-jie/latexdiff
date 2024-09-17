@@ -5463,9 +5463,9 @@ verbatim[*]?
 %DIF END TRADITIONAL PREAMBLE
 
 %DIF CFONT PREAMBLE
-\RequirePackage{color}\definecolor{RED}{rgb}{1,0,0}\definecolor{BLUE}{rgb}{0,0,1}
+\RequirePackage{color,soul}\definecolor{RED}{rgb}{1,0,0}\definecolor{BLUE}{rgb}{0,0,1}\definecolor{YELLOW}{rgb}{1,1,0}
 \DeclareOldFontCommand{\sf}{\normalfont\sffamily}{\mathsf}
-\providecommand{\DIFadd}[1]{{\protect\color{blue} \sf #1}}
+\providecommand{\DIFadd}[1]{{\protect\hl{#1}}}
 \providecommand{\DIFdel}[1]{{\protect\color{red} \scriptsize #1}}
 %DIF END CFONT PREAMBLE
 
